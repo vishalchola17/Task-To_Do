@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #323b47;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #131c27;
+    height: 100vh;
+}
+h1{
+    font-size: 5rem;
+}
+
+li,button,label,input,p{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 4.5rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4, h5{
+    font-size: 2.8rem;
+}
+
+
+nav{ 
+    width: 95%;
+    margin: auto;
+    min-height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #323b47;
+}
+
+nav h1{
+    flex: 1 1 50rem;
+}
+
+.nav-right-wraper{
+    flex: 1 1 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right-wraper button{
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 15px;
+    font-weight: bolder;
+    color: red;
+    background-color: #131c27;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px white;
+}
+
+/*form section*/
+.login-form{
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.login-form form{
+    min-width: 30%;
+    min-height: 55vh;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a2635;
+
+}
+
+.buttons{
+    width: 100%;
+    display: flex;      
+}
+
+#Register{
+    width: 100%;
+    border: none;
+    padding: 2rem 0rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+#email,#password, #name{
+    margin: 2rem;
+    height: 10vh;
+    width: 80%;
+    padding: 1rem;  
+    border-radius: 1.5rem;
+}
+
+footer{
+    height: 10vh;
+    width: 100%;
+}
+
+footer .wraper{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+footer .wraper a{
+    margin: 0rem 2rem;
+}
+footer .wraper a img{
+    width: 8rem;
+}
+#png img{
+    width: 6.5rem;
+}
+
+
+@media (min-width:850px) and (max-width:1060px) {
+    html{
+        font-size: 50%;
+    }
+    .login-form form {
+        min-width: 50vh;
+    }
+}
+
+@media (min-width:700px) and (max-width:850px) {
+    html{
+        font-size: 50%;
+    }
+    nav{
+        text-align: center;
+    }
+    .login-form form {
+        min-width: 50vh;
+    }
+}
+
+@media (min-width:430px) and  (max-width:700px) {
+    html{
+        font-size: 50%;
+    }
+    nav{
+        text-align: center;
+    }
+    .login-form form {
+        min-width: 50vh;
+    }
+}
+
+@media (min-width:320px) and (max-width:430px) {
+    html{
+        font-size: 40%;
+    }
+    nav{
+        text-align: center;
+    }
+    .login-form form {
+       
+        min-width: 50vh;
+      
+    }
+}
+
+@media (min-width:240) and (max-width:320px) {
+    html{
+        font-size: 20%;
+    }
+    nav{
+        text-align: center;
+    }
+    .login-form form {
+        min-width: 40vh;
+        min-height: 50vh;
+    }
+}
+
+@media(max-width:240px) {
+    html{
+        font-size: 20%;
+    }
+    nav{
+        text-align: center;
+    }
+    .login-form form {
+        min-width: 40vh;
+        min-height: 50vh;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"path": "../../../html&css"
+	},
+	{
+		"path": "../../../JS"
+	},
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../weather"
+	},
+	{
+		"path": "../../../../Downloads/Passero_One"
+	}
+],
+  "settings": {
+	"liveServer.settings.multiRootWorkspaceName": "html&css",
+	"liveServer.settings.port": 5501
+  }
+}

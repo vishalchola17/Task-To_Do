@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'passer';
+  color: #437dc4;
+}
+
+@font-face {
+  font-family: "passer";
+  src: url("PasseroOne-Regular.ttf");
+}
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.5rem + 1vw);
+  --big: calc(2.4rem + 1vw);
+  --bigg: calc(5rem + 1vw);
+  --biggg: calc(15rem + 1vw);
+  --special-color:#906272;
+  --bg-color: #414141;
+  --gray-text: #525252;
+}
+
+body {
+  background-color: #131c27;
+}
+
+header {
+  font-size: calc(1rem + 1vw);
+}
+header nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+ 
+  align-items: center;
+}
+header nav h1 {
+  flex: 1 1 50rem;
+}
+header nav .nav-right-wraper {
+  flex: 1 1 50rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header nav .nav-right-wraper button {
+  margin-left: 2rem;
+  padding: 1rem 1.75rem;
+  color: red;
+  background-color: #050505;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form {
+  width: 90%;
+  margin: auto;
+  padding: auto;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  min-height: 50%;
+  box-shadow: 0 0 1px white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.login-form form input, .login-form form button {
+  border: none;
+  padding: 2.5rem 1rem;
+  margin: 0.2rem auto;
+  width: 100%;
+  border-radius: 11px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: calc(1rem + 1vw);
+  font-weight: 900;
+  background-color: #050505;
+}
+.login-form form .buttons {
+  border: none;
+  width: 100%;
+}
+#login, #Register{
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 2rem;
+}
+footer .wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .wraper a img {
+  height: auto;
+  width: calc(4rem + 1vw);
+}
+
+@media (max-width: 600px) {
+  header nav {
+    flex-direction: column;
+  }
+  header nav h1 {
+    flex: 1 1 0rem;
+    text-align: center;
+  }
+  header nav .nav-right-wraper {
+    width: 100%;
+    flex: 1 1 0rem;
+    justify-content: space-between;
+  }
+  header nav .nav-right-wraper button {
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+  }
+  .login-form {
+    width: 100%;
+  }
+  .login-form form {
+    width: 80%;
+  }
+  .login-form form input, .login-form form button {
+    padding: 1.5rem 1rem;
+  }
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #437dc4;
+  font-family: 'passer';
+}
+
+@font-face {
+  font-family: "passer";
+  src: url("PasseroOne-Regular.ttf");
+}
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(3rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.5rem + 1vw);
+  --big: calc(2.4rem + 1vw);
+  --bigg: calc(5rem + 1vw);
+  --biggg: calc(15rem + 1vw);
+  --special-color:#906272;
+  --bg-color: #414141;
+  --gray-text: #525252;
+}
+
+body {
+  background-color: #131c27;
+}
+
+header {
+  box-shadow: 0 0 5px pink;
+}
+header nav {
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-family: "passer";
+  font-size: calc(1rem + 1vw);
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+header h1 {
+  flex: 1 1 45rem;
+}
+header .nav-right-wraper {
+  flex: 1 1 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  background-color: #131c27;
+  color: red;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+}
+
+.add-task form {
+  min-height: 40vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem 0rem;
+}
+.add-task form input, .add-task form button {
+  padding: 1rem;
+  min-width: 50%;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  font-size: calc(1rem + 1vw);
+}
+.add-task form button {
+  cursor: pointer;
+}
+
+.task-list {
+  min-height: 50vh;
+  width: 80%;
+  margin: auto;
+  text-decoration: none;
+}
+.task-list #task-head {
+  font-size: var(--header1);
+  font-family: "passer";
+}
+.task-list .each-task {
+  width: 89%;
+  margin: auto;
+  margin-top: 2rem;
+  min-height: 10vh;
+  border-radius: 10px;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  font-size: var(--header1);
+  background-color: #131c27;
+  box-shadow: 0 0 5px whitesmoke;
+}
+.task-list .each-task h5 {
+  flex: 2 1 50%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: calc(.5rem + 1vw);
+}
+.task-list .each-task .a-sep {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: var(--text);
+  font-family: 'passer';
+}
+.task-list .each-task .a-sep .tick-wrong {
+  height: auto;
+  width: 4rem;
+}
+.task-list .each-task .edit {
+  background: linear-gradient(to right, #2b418f, #c346a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+.task-list .each-task .delete {
+  color: red;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 2rem;
+}
+footer .wraper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .wraper a img {
+  height: auto;
+  width: calc(4rem + 1vw);
+}
+
+@media (max-width: 1000px) {
+  header h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .add-task button {
+    padding: 1rem;
+    width: 100%;
+  }
+  .add-task input {
+    padding: 1rem;
+    width: 100%;
+  }
+  .each-task {
+    flex-direction: column;
+    width: 100%;
+  }
+  .task-list {
+    width: 100%;
+  }
+}
+@media (min-width: 500px) and (max-width: 880px) {
+  .add-task button {
+    padding: 1rem;
+    width: 70%;
+  }
+  .add-task input {
+    padding: 1rem;
+    width: 70%;
+  }
+  .task-list {
+    width: 100%;
+  }
+  .each-task {
+    flex-direction: column;
+    width: 100%;
+  }
+}/*# sourceMappingURL=task.css.map */
